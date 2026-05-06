@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  pointer-events: none;
+  backdrop-filter: blur(5px) invert(20%) contrast(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+}
+.header__logOut {
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+.header__time {
+  margin-left: 100px;
+}
+.header__time__value {
+  font-size: 100px;
+  color: white;
+}
+.header__weathers {
+  height: 150px;
+  width: 150px;
+  margin-right: 50px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+}
+.header__weathers__place {
+  font-weight: 200;
+}
+.header__weathers__temprature {
+  font-size: 30px;
+}
+.header__weathers__condition {
+  font-size: 20px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  border-radius: 20px 20px 0 0px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#login-input {
+  width: 300px;
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+  border-bottom: solid 2px white;
+  box-shadow: 0px 5px 10px black;
+  padding: 0 30px;
+  font-size: 20px;
+  background-color: transparent;
+  margin-bottom: 30px;
+  cursor: none;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+#login-button {
+  width: 300px;
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+  background-color: white;
+  color: white;
+  font-size: 20px;
+  cursor: none;
+  background-color: transparent;
+  box-shadow: 0px 5px 10px black;
+}
+#greeting {
+  font-size: 100px;
+  color: white;
+  white-space: nowrap;
+}
+.main__todo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 450px;
+}
+.main__todoForm-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__todoForm {
+  display: block;
+}
+li {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.hidden {
+  display: none;
+}
