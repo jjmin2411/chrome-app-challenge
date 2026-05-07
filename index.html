@@ -40,10 +40,23 @@
               placeholder="What needs to be done?"
               required
             />
-            <button id="todo-button" type="submit">Add</button>
+            <button
+              class="main__todoForm__button"
+              id="todo-button"
+              type="submit"
+            >
+              Add
+            </button>
           </form>
         </div>
-        <ul id="todo-list"></ul>
+        <div class="uls">
+          <ul id="todo-list">
+            <h2>To Do</h2>
+          </ul>
+          <ul id="completed-list">
+            <h2>Completed</h2>
+          </ul>
+        </div>
       </div>
     </main>
     <script src="./js/weather.js"></script>

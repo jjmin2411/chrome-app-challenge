@@ -50,8 +50,8 @@ header {
   color: white;
 }
 .header__weathers {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   margin-right: 50px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -125,7 +125,7 @@ form {
 .main__todo {
   display: flex;
   flex-direction: column;
-  margin-bottom: 450px;
+  margin-bottom: 50px;
 }
 .main__todoForm-container {
   display: flex;
@@ -135,9 +135,62 @@ form {
 .main__todoForm {
   display: block;
 }
+.main__todoForm__input {
+  width: 300px;
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+  border-bottom: solid 2px white;
+  box-shadow: 0px 5px 10px black;
+  padding: 0 30px;
+  font-size: 20px;
+  background-color: transparent;
+  margin-right: 10px;
+}
+.main__todoForm__button {
+  width: 100px;
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+  background-color: white;
+  color: white;
+  font-size: 20px;
+  cursor: none;
+  background-color: transparent;
+  box-shadow: 0 5px 10px black;
+}
+.uls {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+ul {
+  list-style: none;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0;
+  padding-top: 20px;
+}
+h2 {
+  color: white;
+}
 li {
   font-size: 20px;
   color: rgb(255, 255, 255);
+  width: 200px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 .hidden {
   display: none;
